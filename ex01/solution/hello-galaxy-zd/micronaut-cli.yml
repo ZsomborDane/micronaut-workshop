@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: hello.galaxy
+---
+testFramework: spock
+sourceLanguage: groovy
