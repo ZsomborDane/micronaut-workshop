@@ -1,5 +1,8 @@
-package fixtures.viwe
+package fixtures.view
 
+import grails.gorm.annotation.Entity
+
+@Entity
 class FixtureView {
 
     String homeClubName

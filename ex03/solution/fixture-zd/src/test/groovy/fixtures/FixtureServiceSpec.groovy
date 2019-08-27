@@ -2,7 +2,8 @@ package fixtures
 
 import fixtures.domain.Fixture
 import fixtures.service.FixtureService
-import fixtures.viwe.FixtureView
+import fixtures.view.FixtureView
+import io.micronaut.context.ApplicationContext
 import io.micronaut.runtime.server.EmbeddedServer
 import io.micronaut.test.annotation.MicronautTest
 import spock.lang.AutoCleanup
@@ -12,8 +13,8 @@ import spock.lang.Specification
 @MicronautTest
 class FixtureServiceSpec extends Specification {
 
-    @Shared @AutoCleanup EmbeddedServer embeddedServer //= ApplicationContext.run(EmbeddedServer)
-    @Shared FixtureService fixtureService //= embeddedServer.applicationContext.getBean(FixtureService)
+    @Shared @AutoCleanup EmbeddedServer embeddedServer = ApplicationContext.run(EmbeddedServer)
+    @Shared FixtureService fixtureService = embeddedServer.applicationContext.getBean(FixtureService)
 
     void "it can get full details of a fixture"() {
         given:

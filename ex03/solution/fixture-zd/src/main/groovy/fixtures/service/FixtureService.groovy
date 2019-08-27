@@ -3,7 +3,7 @@ package fixtures.service
 import fixtures.clubs.Club
 import fixtures.clubs.ClubsClient
 import fixtures.domain.Fixture
-import fixtures.viwe.FixtureView
+import fixtures.view.FixtureView
 import grails.gorm.services.Service
 import io.reactivex.Maybe
 
