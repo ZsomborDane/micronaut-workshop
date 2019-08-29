@@ -10,9 +10,9 @@ class ClubsClientMock implements ClubsApi{
     @Override
     Maybe<Club> findTeam(Long id) {
         if (id == 1) {
-            Maybe.just(new Club(name: "CD Leganes", stadium: "Butarque"))
+            Maybe.just(new Club(name: "Real Madrid CF", stadium: "Santiago Bernabeu"))
         } else {
-            Maybe.just(new Club(name: "Getafe CF", stadium: "Coliseum"))
+            Maybe.just(new Club(name: "FC Barcelona", stadium: "Coliseum"))
         }
     }
 }

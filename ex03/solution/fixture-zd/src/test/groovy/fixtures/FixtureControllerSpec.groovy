@@ -31,8 +31,8 @@ class FixtureControllerSpec extends Specification {
         List<FixtureView> views = client.findAll()
 
         then:
-        views.first().homeClubName == "CD Leganes"
-        views.first().awayClubName == "Getafe CF"
+        views.first().homeClubName == "Real Madrid CF"
+        views.first().awayClubName == "FC Barcelona"
 
         cleanup:
         fixture.delete(flush: true)
