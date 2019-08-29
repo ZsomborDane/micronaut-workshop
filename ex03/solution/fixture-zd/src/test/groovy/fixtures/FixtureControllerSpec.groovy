@@ -5,11 +5,9 @@ import fixtures.domain.Fixture
 import fixtures.service.FixtureService
 import fixtures.view.FixtureView
 import groovy.util.logging.Slf4j
-import io.micronaut.context.ApplicationContext
 import io.micronaut.runtime.server.EmbeddedServer
 import io.micronaut.test.annotation.MicronautTest
 import spock.lang.AutoCleanup
-import spock.lang.Shared
 import spock.lang.Specification
 
 import javax.inject.Inject

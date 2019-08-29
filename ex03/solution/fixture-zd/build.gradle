@@ -23,7 +23,7 @@ dependencies {
     compileOnly platform("io.micronaut:micronaut-bom:$micronautVersion")
     compileOnly "io.micronaut:micronaut-inject-groovy"
     implementation platform("io.micronaut:micronaut-bom:$micronautVersion")
-    //implementation "io.micronaut.configuration:micronaut-mongo-reactive"
+    implementation "io.micronaut.configuration:micronaut-mongo-reactive"
     implementation "io.micronaut:micronaut-runtime-groovy"
     implementation "io.micronaut:micronaut-validation"
     implementation "io.micronaut:micronaut-discovery-client"
@@ -39,7 +39,7 @@ dependencies {
     testImplementation "io.micronaut:micronaut-inject-groovy"
     testImplementation "io.micronaut.test:micronaut-test-spock"
     testImplementation "io.micronaut.test:micronaut-test-junit5"
-    testImplementation "de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.1.1"
+    //testImplementation "de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.1.1"
     testRuntimeOnly "org.junit.vintage:junit-vintage-engine:5.5.0"
 }
 
